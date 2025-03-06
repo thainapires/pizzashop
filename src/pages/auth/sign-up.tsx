@@ -1,6 +1,8 @@
+import { registerRestaurant } from '@/api/register-restaurant'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { useMutation } from '@tanstack/react-query'
 import { Helmet } from 'react-helmet-async'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
@@ -14,25 +16,35 @@ const signUpForm = z.object({
     email: z.string().email(),
 })
 
+
 type SignUpForm = z.infer<typeof signUpForm>
 export function SignUp(){
 
     const navigate = useNavigate()
 
+    const { mutateAsync: registerRestaurantFn } = useMutation({
+        mutationFn: registerRestaurant,
+    })
+
     const { register, handleSubmit, formState: { isSubmitting }} = useForm<SignUpForm>()
 
     async function handleSignUp(data: SignUpForm) {
-        await new Promise(resolve => setTimeout(resolve, 2000))
+        await registerRestaurantFn( {
+            restaurantName: data.restaurantName,
+            managerName: data.managerName,
+            email: data.email,
+            phone: data.phone,
+        })
 
         try{
-        toast.success('Restaurante cadastrado com sucesso!.', {
-            action: {
-              label: 'Login',
-              onClick: () => {
-                navigate('/sign-in')
-              },
-            },
-        })
+            toast.success('Restaurante cadastrado com sucesso!.', {
+                action: {
+                    label: 'Login',
+                    onClick: () => {
+                        navigate(`/sign-in?email=${data.email}`)
+                    },
+                },
+            })
         }catch{
             toast.error('Erro ao cadastrar restaurante.')
         }
