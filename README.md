@@ -1,3 +1,48 @@
+##### English Version:
+
+# 🍕 Pizza Shop
+
+![image](https://github.com/user-attachments/assets/96e49e93-8110-4e5b-812c-1d9d11a0c659)
+
+Dashboard for managing establishments and order control, inspired by iFood (a famous orders management in Brazil), developed through the ReactJS training by Rocketseat. I am currently progressing through the lessons, so the project is not yet finished. After completing the training, I plan to add more features to the project.
+
+## Setup
+
+1. Install dependencies:
+```npm install```
+
+2. Run the project:
+```npm run dev```
+
+## Tools 
+
+React, React Router DOM, Tailwind, shadcn/ui, React Query and Radix.
+
+## Aprendizados
+
+With this project, it will be possible to obtain knowledge related to JWT authentication, caching and revalidation, connection to the back-end (API) and also unit tests.
+
+## Features
+
+- Establishment registration;
+- Establishment login (magic link);
+- Registration as a customer;
+- Creation of new orders;
+- Menu management;
+- Evaluation management;
+- Order management;
+- Establishment profile management;
+- Store open/closed;
+- Dashboard metrics;
+  - Order graph in the last 15 days;
+  - Value graph in the last 15 days;
+  - Average evaluations (month/general);
+  - Average orders per day (month/general);
+- Sound notifications for new orders (change favicon);
+
+
+##### Portuguese Version:
+
 # 🍕 Pizza Shop
 
 ![image](https://github.com/user-attachments/assets/96e49e93-8110-4e5b-812c-1d9d11a0c659)
