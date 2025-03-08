@@ -18,7 +18,7 @@ Dashboard for managing establishments and order control, inspired by iFood (a fa
 
 React, React Router DOM, Tailwind, shadcn/ui, React Query and Radix.
 
-## Aprendizados
+## Learnings
 
 With this project, it will be possible to obtain knowledge related to JWT authentication, caching and revalidation, connection to the back-end (API) and also unit tests.
 
