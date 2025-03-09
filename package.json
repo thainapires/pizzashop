@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:test": "vite --port 50789 --mode test",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -54,6 +55,7 @@
     "globals": "^15.14.0",
     "happy-dom": "^17.4.3",
     "jsdom": "^26.0.0",
+    "msw": "^2.7.3",
     "postcss": "^8.4.49",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.17",
@@ -62,5 +64,10 @@
     "vite": "^6.0.5",
     "vitest": "^3.0.8"
   },
-  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
+  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
 }
