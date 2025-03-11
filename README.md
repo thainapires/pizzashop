@@ -52,9 +52,9 @@ If you prefer to run tests with the Playwright UI, use:
 
 ```pnpm playwright test --ui```
 
-## Tools 
+## Main tools 
 
-React, React Router DOM, Tailwind, shadcn/ui, React Query and Radix.
+React, React Router DOM, Tailwind, shadcn/ui, React Query, Radix, vitest and playwright.
 
 ## Learnings
 
