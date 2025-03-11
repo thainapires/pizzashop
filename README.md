@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/96e49e93-8110-4e5b-812c-1d9d11a0c659)
 
-Dashboard for managing establishments and order control, inspired by iFood (a famous orders management in Brazil), developed through the ReactJS training by Rocketseat. I am currently progressing through the lessons, so the project is not yet finished. After completing the training, I plan to add more features to the project.
+Dashboard for managing establishments and order control, inspired by iFood (a famous orders management in Brazil), developed through the ReactJS training by Rocketseat.
 
 ## Setup
 
